@@ -7,6 +7,9 @@ require 'lib/stratego'
 
 class Stratego < Sinatra::Base
   get '/' do
+
+    @gameboard = Gameboard.new :width => 3, :height => 6
+
     @move_from = Cell.new
     @move_to = Cell.new
     haml :index
