@@ -16,6 +16,7 @@ class Gameboard
       send("#{property}=",value)
     end
 
+
     computer_units = Creator.generate_computer
     computer_units = Creator.generate_computer
 
@@ -27,6 +28,7 @@ class Gameboard
     battlefield = computer_units + middleground + player_units
 
     index = 0
+    @cells = []
 
     width.times do |x|
       height.times do |y|
