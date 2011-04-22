@@ -1,8 +1,4 @@
 
-module Stratego
-
   class Gameboard
 
-  end
-
-end
+ end

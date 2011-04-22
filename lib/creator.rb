@@ -1,5 +1,5 @@
 
-module Stratego
+module Creator
   extend self
 
   def generate_computer

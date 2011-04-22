@@ -1,7 +1,5 @@
 require File.dirname(__FILE__) + "/../lib/stratego"
 
-module Stratego
-
   describe Unit do
 
     [ :rank, :name, :view ].each do |method|
@@ -62,4 +60,3 @@ module Stratego
 
   end
 
-end
