@@ -2,4 +2,8 @@ source :rubygems
 
 gem "sinatra"
 gem "haml"
-gem "shotgun"
+
+group :development do
+  gem 'rspec'
+  gem "shotgun"
+end
