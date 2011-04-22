@@ -30,8 +30,8 @@ class Gameboard
     index = 0
     @cells = []
 
-    width.times do |x|
-      height.times do |y|
+    height.times do |y|
+      width.times do |x|
         @cells << Cell.new(x,y,battlefield[index])
         index += 1
       end
@@ -44,7 +44,7 @@ class Gameboard
   #
   def unit_at(x,y)
     cell = @cells.find {|cell| cell.x == x and cell.y == y }
-    cell.unit if cell
+    cell.unit.view if cell
   end
 
 
