@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title Stratego
+  %body
+    %h1 Stratego
+    - 6.times do |row|
+      .row
+        %input{:type => "text", :name => "#{row}_0"}
+        %input{:type => "text", :name => "#{row}_1"}
+        %input{:type => "text", :name => "#{row}_2"}
+    #moves
+      From: 
+      %input{:type => "text", :name => "move_from"}
+      To:
+      %input{:type => "text", :name => "move_to"}
+    %input{:type => "submit", :name => "submit", :value => "Move"}
