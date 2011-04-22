@@ -7,23 +7,23 @@
     %table
       %tr
         %th
-        %th A
-        %th B
-        %th C
+        %th 0
+        %th 1
+        %th 2
       - 6.times do |row|
         %tr      
           %td
             = row
           %td
-            %input{:type => "text", :name => "A#{row}"}
+            %input{:type => "text", :name => "0#{row}"}
           %td
-            %input{:type => "text", :name => "B#{row}"}
+            %input{:type => "text", :name => "1#{row}"}
           %td
-            %input{:type => "text", :name => "C#{row}"}
+            %input{:type => "text", :name => "2#{row}"}
     %form{:action => '/move', :method => 'POST'}
       From: 
-      %input{:type => "text", :name => "move_from"}
+      %input{:type => "text", :name => "move_from", :value => "#{@move_from}"}
       To:
-      %input{:type => "text", :name => "move_to"}
+      %input{:type => "text", :name => "move_to", :value => "#{@move_to}"}
       %br
       %input{:type => "submit", :name => "submit", :value => "Move"}
