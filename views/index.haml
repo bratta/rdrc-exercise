@@ -4,14 +4,26 @@
     %title Stratego
   %body
     %h1 Stratego
-    - 6.times do |row|
-      .row
-        %input{:type => "text", :name => "#{row}_0"}
-        %input{:type => "text", :name => "#{row}_1"}
-        %input{:type => "text", :name => "#{row}_2"}
-    #moves
+    %table
+      %tr
+        %th
+        %th 0
+        %th 1
+        %th 2
+      - 6.times do |row|
+        %tr      
+          %td
+            = row
+          %td
+            %input{:type => "text", :name => "0#{row}"}
+          %td
+            %input{:type => "text", :name => "1#{row}"}
+          %td
+            %input{:type => "text", :name => "2#{row}"}
+    %form{:action => '/move', :method => 'POST'}
       From: 
-      %input{:type => "text", :name => "move_from"}
+      %input{:type => "text", :name => "move_from", :value => "#{@move_from}"}
       To:
-      %input{:type => "text", :name => "move_to"}
-    %input{:type => "submit", :name => "submit", :value => "Move"}
+      %input{:type => "text", :name => "move_to", :value => "#{@move_to}"}
+      %br
+      %input{:type => "submit", :name => "submit", :value => "Move"}
