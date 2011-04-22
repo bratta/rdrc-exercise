@@ -37,7 +37,13 @@ class Gameboard
 
   end
 
-
+  #
+  # Return the unit at this location
+  #
+  def unit_at(x,y)
+    cell = @cells.find {|cell| cell.x == x and cell.y == y }
+    cell.unit if cell
+  end
 
 
 

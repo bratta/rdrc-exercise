@@ -3,8 +3,7 @@ require 'bundler/setup'
 
 require 'sinatra/base'
 require 'haml'
-require 'lib/cell'
-require 'lib/unit'
+require 'lib/stratego'
 
 class Stratego < Sinatra::Base
   get '/' do
