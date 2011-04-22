@@ -1,5 +1,3 @@
-module Stratego
-
   class Unit
 
     #
@@ -59,5 +57,3 @@ module Stratego
 
     end
   end
-
-end

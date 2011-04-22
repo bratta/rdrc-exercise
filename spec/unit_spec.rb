@@ -1,7 +1,4 @@
-# TODO: change to the relative path based on file
-require File.dirname(__FILE__) + "/../lib/unit"
-
-module Stratego
+require File.dirname(__FILE__) + "/../lib/stratego"
 
   describe Unit do
 
@@ -63,4 +60,3 @@ module Stratego
 
   end
 
-end
